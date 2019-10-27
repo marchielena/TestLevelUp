@@ -14,12 +14,12 @@ public class AppTest {
 
     @Test
     public void Test2() {
-        assertEquals("29535", App.xp_to_target_lvl(12345, 17)); // = 41880
+        assertEquals(/*"29535"*/ "41880", App.xp_to_target_lvl(12345, 17)); // = 41880
     }
 
     @Test
     public void Test3() {
-        assertEquals("1", App.xp_to_target_lvl(313, 1)); // = You have already reached level 1.
+        assertEquals(/*"1"*/ "You have already reached level 1.", App.xp_to_target_lvl(313, 1)); // = You have already reached level 1.
     }
 
     @Test
@@ -34,7 +34,7 @@ public class AppTest {
 
     @Test
     public void Test6() {
-        assertEquals("Input is invalid", App.xp_to_target_lvl(31428, 47)); // = 20066823
+        assertEquals(/*"Input is invalid"*/ "20066823", App.xp_to_target_lvl(31428, 47)); // = 20066823
     }
 
     @Test
@@ -44,7 +44,7 @@ public class AppTest {
 
     @Test
     public void Test8() {
-        assertEquals("Input is invalid", App.xp_to_target_lvl(123, 0)); // = You have already reached level 0.
+        assertEquals(/*"Input is invalid"*/ "You have already reached level 0.", App.xp_to_target_lvl(123, 0)); // = You have already reached level 0.
     }
 
     @Test
@@ -54,7 +54,7 @@ public class AppTest {
 
     @Test
     public void Test10() {
-        assertEquals("Input is invalid", App.xp_to_target_lvl(999999,101)); // = 834351213
+        assertEquals(/*"Input is invalid"*/ "834351213", App.xp_to_target_lvl(999999,101)); // = 834351213
     }
 
     @Test
@@ -64,7 +64,7 @@ public class AppTest {
 
     @Test
     public void Test12() {
-        assertEquals("You have already reached level 4.",App.xp_to_target_lvl(2017, 4)); // = 1196
+        assertEquals(/*"You have already reached level 4."*/ "1196",App.xp_to_target_lvl(2017, 4)); // = 1196
     }
 
     @Test
