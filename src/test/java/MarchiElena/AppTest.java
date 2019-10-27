@@ -27,7 +27,7 @@ public class AppTest {
         //assertEquals("Input is invalid","769000000000000", App.xp_to_target_lvl(832696988485, 170));
     }
 
-    //@Test
+    @Test
     public void Test5() {
        //assertEquals("Input is invalid", App.xp_to_target_lvl());
     }
